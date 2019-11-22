@@ -1,0 +1,63 @@
+PINOUT - PRACTICA 3
+
+//////////////MOTORES-FTM///////////////////////
+PTC1- channel_0 -M0  BASE_LEFT    L //orange --no gira
+PTC2- channel_1 -M0N  BASE_RIGHT  R 
+
+
+PTC3- channel_2 -M1   SHOULDER_UP   A //yellow --trabajando perfecto
+PTC4- channel_3 -M1N SHOULDER_DOWN  Y
+
+PTD4- channel_4 -M2  ELBOW_UP    X  //azul y verde ---trabajando perfecto
+PTD5- channel_5 -M2N  ELBOW_DOWN B
+
+PTD4- channel_4-M3 WRIST_UP C    //RED DOBLE YELLOW
+PTD5- channel_5 -M3N WRIST_DOWN D
+
+PTD6 FTM0_CH6 -M4 PIN_OPEN F //black and gray ---trabajando perfecto
+PTD7 FTM0_CH7 -M4N PIN_CLOSE E
+/////////////ENABLE////////////////// cd40
+PTB2 - 0
+PTB3 - 1
+/////////////LED/////////////
+PTB10 - LED
+
+/////////////SWITCHES//////////////////
+PTC6 - SW2
+PTA4 - SW3
+
+////////////BUTTONS////////////////////
+PTB2 - B0
+PTB3 - B1
+PTB9 - B2
+PTB10 - B3
+PTB11 - B4 
+PTB19 - B5
+PTB23 - B6
+
+
+
+////////////////POT////////////////////
+PTE24 - ADC_SE17
+
+/////////////SPI///////////////////////
+PTD0 - RESET
+GND - CE
+PTD3 - DC
+PTD2 - DIN
+PTD1 - CLK
+P3V3 - VCC 
+GND - LIGHT
+GND - GND
+ 
+
+///////////////UART///////////////////////
+
+BLUETOOTH CONTROL 
+PTA1 - UART0_RX		
+PTA2 - UART0_TX		
+
+BLUETOOTH MINDWAVE
+PTC14 - UART4_RX
+PTC15 - UART4_TX
+
